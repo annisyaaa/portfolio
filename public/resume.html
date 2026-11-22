@@ -809,5 +809,13 @@
         </section>
       </article>
     </main>
+    <script>
+      (function () {
+        if (window.location.pathname.indexOf('/public/') !== -1) {
+          var back = document.querySelector('.toolbar-back');
+          if (back) back.setAttribute('href', '../');
+        }
+      })();
+    </script>
   </body>
 </html>

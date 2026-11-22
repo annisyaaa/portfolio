@@ -6765,55 +6765,55 @@
             ]
           },
           'edom-bigru': {
-            meta: 'NLP · Bahasa Indonesia · TensorFlow / Keras · Skripsi FKIP Universitas Riau',
-            title: 'Analisis Sentimen Evaluasi Dosen oleh Mahasiswa (EDOM) dengan Bidirectional GRU',
-            accuracy: '92,5% Data Uji (186/201)',
-            volume: '1.000 Komentar Asli EDOM',
-            compute: '12 Konfigurasi BiGRU',
+            meta: 'NLP · Indonesian Text · TensorFlow / Keras · Undergraduate Thesis (FKIP Universitas Riau)',
+            title: 'Sentiment Analysis of Student Evaluations of Lecturers (EDOM) Using Bidirectional GRU',
+            accuracy: '92.5% Test Acc (186/201)',
+            volume: '1,000 Authentic EDOM Comments',
+            compute: '12 BiGRU Configurations',
             image: '',
             alt: '',
             summary:
-              'Klasifikasi otomatis komentar mahasiswa pada sistem EDOM Fakultas Keguruan dan Ilmu Pendidikan (FKIP) Universitas Riau menjadi sentimen positif atau negatif, menggantikan proses peninjauan manual yang lambat.',
+              'Automated binary sentiment classification of student comments from the EDOM lecturer evaluation system at the Faculty of Teacher Training and Education (FKIP), Universitas Riau, replacing slow manual review.',
             approach: '',
             stack: '',
             docHtml:
               '<div class="project-modal-doc-badges">' +
                 '<span class="project-modal-doc-badge">Python 3.x</span>' +
                 '<span class="project-modal-doc-badge">TensorFlow · Keras</span>' +
-                '<span class="project-modal-doc-badge">NLP Bahasa Indonesia</span>' +
-                '<span class="project-modal-doc-badge">Status: Selesai</span>' +
+                '<span class="project-modal-doc-badge">Indonesian NLP</span>' +
+                '<span class="project-modal-doc-badge">Status: Completed</span>' +
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Ringkasan</h4>' +
+                '<h4 class="project-modal-doc-h4">Overview</h4>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
                     '<tbody>' +
-                      '<tr><th>Tugas</th><td>Klasifikasi sentimen biner (positif / negatif) pada teks Bahasa Indonesia</td></tr>' +
-                      '<tr><th>Data</th><td>1.000 komentar asli mahasiswa FKIP Universitas Riau (Semester Ganjil 2022/2023)</td></tr>' +
+                      '<tr><th>Task</th><td>Binary sentiment classification (positive / negative) on Indonesian text</td></tr>' +
+                      '<tr><th>Data</th><td>1,000 authentic student comments from FKIP Universitas Riau (Odd Semester 2022/2023)</td></tr>' +
                       '<tr><th>Model</th><td>Bidirectional GRU (BiGRU), TensorFlow/Keras</td></tr>' +
-                      '<tr><th>Eksperimen</th><td>12 konfigurasi (3 rasio split × 2 jumlah epoch × 2 jumlah unit GRU)</td></tr>' +
-                      '<tr><th>Konfigurasi terbaik</th><td>Split 80:20 · 5 epoch · 256 unit GRU</td></tr>' +
-                      '<tr><th>Akurasi pada data uji</th><td><strong>92,5%</strong> (186 dari 201 sampel, dihitung dari confusion matrix)</td></tr>' +
-                      '<tr><th>Proporsi kelas mayoritas</th><td>55,7%</td></tr>' +
+                      '<tr><th>Experiments</th><td>12 configurations (3 split ratios × 2 epoch counts × 2 GRU unit sizes)</td></tr>' +
+                      '<tr><th>Best configuration</th><td>80:20 split · 5 epochs · 256 GRU units</td></tr>' +
+                      '<tr><th>Test set accuracy</th><td><strong>92.5%</strong> (186 of 201 samples, computed from the confusion matrix)</td></tr>' +
+                      '<tr><th>Majority class share</th><td>55.7%</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Latar Belakang</h4>' +
-                '<p class="project-modal-doc-p">Setiap semester, mahasiswa Universitas Riau mengisi kuesioner online EDOM yang berisi penilaian, kritik, dan saran untuk dosen. Komentar tersebut berharga untuk memperbaiki kualitas pengajaran, tetapi:</p>' +
+                '<h4 class="project-modal-doc-h4">Background</h4>' +
+                '<p class="project-modal-doc-p">Every semester, Universitas Riau students complete the online EDOM questionnaire containing ratings, critiques, and suggestions for lecturers. These comments are valuable for improving teaching quality, however:</p>' +
                 '<ul class="project-modal-list">' +
-                  '<li>Penilaian sentimen komentar masih dilakukan <strong>secara manual</strong>.</li>' +
-                  '<li>Prosesnya memakan waktu karena seluruh komentar dari seluruh mahasiswa harus dibaca.</li>' +
-                  '<li>Sistem EDOM belum memiliki kemampuan <strong>analisis otomatis</strong> terhadap komentar.</li>' +
+                  '<li>Sentiment assessment of student comments was still performed <strong>manually</strong>.</li>' +
+                  '<li>The review process was time-consuming because comments from every student had to be read individually.</li>' +
+                  '<li>The EDOM system lacked <strong>automated analysis</strong> capabilities for free-text feedback.</li>' +
                 '</ul>' +
-                '<p class="project-modal-doc-p"><strong>Tujuan:</strong> membangun model yang dapat mengklasifikasikan sentimen komentar EDOM secara otomatis, sehingga program studi memperoleh gambaran kepuasan mahasiswa dengan lebih cepat.</p>' +
-                '<p class="project-modal-doc-p"><strong>Manfaat:</strong></p>' +
+                '<p class="project-modal-doc-p"><strong>Objective:</strong> Build a model that automatically classifies EDOM comment sentiment so study programs can gain visibility into student satisfaction much faster.</p>' +
+                '<p class="project-modal-doc-p"><strong>Benefits:</strong></p>' +
                 '<ul class="project-modal-list">' +
-                  '<li><strong>Program studi:</strong> insight awal untuk mengevaluasi kinerja dosen berdasarkan kepuasan mahasiswa.</li>' +
-                  '<li><strong>Peneliti dan praktisi:</strong> referensi penerapan BiGRU pada teks evaluasi pendidikan berbahasa Indonesia.</li>' +
+                  '<li><strong>Study programs:</strong> Early insights to evaluate lecturer performance based on student satisfaction.</li>' +
+                  '<li><strong>Researchers and practitioners:</strong> A practical reference for applying BiGRU to Indonesian educational evaluation text.</li>' +
                 '</ul>' +
               '</div>' +
 
@@ -6821,31 +6821,31 @@
                 '<h4 class="project-modal-doc-h4">Dataset</h4>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Atribut</th><th>Keterangan</th></tr></thead>' +
+                    '<thead><tr><th>Attribute</th><th>Description</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>Sumber</th><td>Sistem EDOM FKIP Universitas Riau</td></tr>' +
-                      '<tr><th>Periode</th><td>Semester Ganjil Tahun Ajaran 2022/2023</td></tr>' +
-                      '<tr><th>Jenis</th><td>Data sekunder berupa teks komentar mahasiswa</td></tr>' +
-                      '<tr><th>Jumlah</th><td>1.000 komentar</td></tr>' +
-                      '<tr><th>Kelas</th><td>Positif (557 data, 55,7%) dan Negatif (443 data, 44,3%)</td></tr>' +
-                      '<tr><th>Bahasa</th><td>Bahasa Indonesia informal (singkatan, kata tidak baku, campuran bahasa Inggris)</td></tr>' +
+                      '<tr><th>Source</th><td>EDOM System, FKIP Universitas Riau</td></tr>' +
+                      '<tr><th>Period</th><td>Odd Semester, Academic Year 2022/2023</td></tr>' +
+                      '<tr><th>Type</th><td>Secondary data consisting of student comment text</td></tr>' +
+                      '<tr><th>Volume</th><td>1,000 comments</td></tr>' +
+                      '<tr><th>Classes</th><td>Positive (557 records, 55.7%) and Negative (443 records, 44.3%)</td></tr>' +
+                      '<tr><th>Language</th><td>Informal Indonesian (abbreviations, colloquial phrasing, occasional English code-mixing)</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
-                '<h5 class="project-modal-doc-h5">Pelabelan</h5>' +
+                '<h5 class="project-modal-doc-h5">Annotation</h5>' +
                 '<ul class="project-modal-list">' +
-                  '<li>Dilakukan manual menggunakan Microsoft Excel oleh <strong>dua anotator</strong>: peneliti dan satu pelabel independen.</li>' +
-                  '<li>Kedua anotator memakai kriteria sentimen yang sama untuk menjaga konsistensi.</li>' +
-                  '<li>Perbedaan label didiskusikan sampai disepakati satu label akhir untuk setiap komentar.</li>' +
+                  '<li>Manually labeled in Microsoft Excel by <strong>two annotators</strong>: the researcher and one independent labeler.</li>' +
+                  '<li>Both annotators followed shared sentiment guidelines to maintain labeling consistency.</li>' +
+                  '<li>Label disagreements were discussed until a single consensus label was agreed upon for every comment.</li>' +
                 '</ul>' +
-                '<h5 class="project-modal-doc-h5">Contoh Data</h5>' +
+                '<h5 class="project-modal-doc-h5">Sample Data</h5>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Komentar</th><th>Label</th></tr></thead>' +
+                    '<thead><tr><th>Original Comment (Indonesian)</th><th>Label</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><td>terkadang saat pembelajaran dikelas suara bapak kecil sehingga tidak terdengar jelas</td><td>Negatif</td></tr>' +
-                      '<tr><td>menurut saya dalam memberikan metode belajar yang sangat baik sehingga mahasiswa dapat mudah mengerti</td><td>Positif</td></tr>' +
-                      '<tr><td>tidak ada kritik dan saran, karna pak dosen sudah sangat bagus dalam mengajar</td><td>Positif</td></tr>' +
+                      '<tr><td>terkadang saat pembelajaran dikelas suara bapak kecil sehingga tidak terdengar jelas <em>(sometimes in class the lecturer\'s voice is too quiet to hear clearly)</em></td><td>Negative</td></tr>' +
+                      '<tr><td>menurut saya dalam memberikan metode belajar yang sangat baik sehingga mahasiswa dapat mudah mengerti <em>(the teaching method is very good so students can understand easily)</em></td><td>Positive</td></tr>' +
+                      '<tr><td>tidak ada kritik dan saran, karna pak dosen sudah sangat bagus dalam mengajar <em>(no criticism or suggestions, as the lecturer teaches very well)</em></td><td>Positive</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
@@ -6854,13 +6854,13 @@
               '<div class="project-modal-doc-sec">' +
                 '<h4 class="project-modal-doc-h4">Pipeline</h4>' +
                 '<div class="project-modal-doc-flow">' +
-                  '<span class="project-modal-doc-node">Data komentar EDOM</span><span class="project-modal-doc-arrow">→</span>' +
-                  '<span class="project-modal-doc-node">Pelabelan manual (2 anotator)</span><span class="project-modal-doc-arrow">→</span>' +
+                  '<span class="project-modal-doc-node">EDOM comment data</span><span class="project-modal-doc-arrow">→</span>' +
+                  '<span class="project-modal-doc-node">Manual labeling (2 annotators)</span><span class="project-modal-doc-arrow">→</span>' +
                   '<span class="project-modal-doc-node">Text preprocessing</span><span class="project-modal-doc-arrow">→</span>' +
                   '<span class="project-modal-doc-node">Word indexing</span><span class="project-modal-doc-arrow">→</span>' +
-                  '<span class="project-modal-doc-node">Split data latih dan uji</span><span class="project-modal-doc-arrow">→</span>' +
-                  '<span class="project-modal-doc-node">Pelatihan BiGRU</span><span class="project-modal-doc-arrow">→</span>' +
-                  '<span class="project-modal-doc-node">Evaluasi (accuracy, precision, recall, F1, confusion matrix)</span>' +
+                  '<span class="project-modal-doc-node">Train / test split</span><span class="project-modal-doc-arrow">→</span>' +
+                  '<span class="project-modal-doc-node">BiGRU training</span><span class="project-modal-doc-arrow">→</span>' +
+                  '<span class="project-modal-doc-node">Evaluation (accuracy, precision, recall, F1, confusion matrix)</span>' +
                 '</div>' +
               '</div>' +
 
@@ -6868,19 +6868,19 @@
                 '<h4 class="project-modal-doc-h4">Preprocessing</h4>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Tahap</th><th>Tujuan</th><th>Contoh</th></tr></thead>' +
+                    '<thead><tr><th>Stage</th><th>Purpose</th><th>Example</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>Case folding</th><td>Menyeragamkan huruf menjadi huruf kecil</td><td>Menurut saya... → menurut saya...</td></tr>' +
-                      '<tr><th>Tokenizing</th><td>Memecah kalimat menjadi token kata</td><td>[\'terkadang\', \'saat\', \'pembelajaran\', ...]</td></tr>' +
-                      '<tr><th>Filtering</th><td>Pembersihan simbol, stopword removal, normalisasi</td><td>[\'terkadang\', \'pembelajaran\', \'dikelas\', \'suara\', \'terdengar\']</td></tr>' +
-                      '<tr><th>Stemming</th><td>Mengubah kata berimbuhan ke bentuk dasar (Sastrawi)</td><td>pembelajaran → ajar</td></tr>' +
+                      '<tr><th>Case folding</th><td>Standardize all characters to lowercase</td><td>Menurut saya... → menurut saya...</td></tr>' +
+                      '<tr><th>Tokenizing</th><td>Split sentences into individual word tokens</td><td>[\'terkadang\', \'saat\', \'pembelajaran\', ...]</td></tr>' +
+                      '<tr><th>Filtering</th><td>Symbol removal, stopword removal, and normalization</td><td>[\'terkadang\', \'pembelajaran\', \'dikelas\', \'suara\', \'terdengar\']</td></tr>' +
+                      '<tr><th>Stemming</th><td>Reduce affixed words to base roots (Sastrawi)</td><td>pembelajaran → ajar</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
-                '<h5 class="project-modal-doc-h5">Contoh hasil akhir</h5>' +
+                '<h5 class="project-modal-doc-h5">Sample Output</h5>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Sebelum</th><th>Sesudah</th></tr></thead>' +
+                    '<thead><tr><th>Before</th><th>After</th></tr></thead>' +
                     '<tbody>' +
                       '<tr><td>terkadang saat pembelajaran dikelas suara bapak kecil sehingga tidak terdengar jelas</td><td>terkadang ajar kelas suara dengar</td></tr>' +
                       '<tr><td>tidak ada kritik dan saran, karna pak dosen sudah sangat bagus dalam mengajar</td><td>kritik saran karna dosen bagus ajar</td></tr>' +
@@ -6890,41 +6890,41 @@
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Arsitektur Model</h4>' +
-                '<pre class="project-modal-doc-pre">Input (urutan indeks kata)\n   ↓\nEmbedding (dimensi 4)\n   ↓\nBidirectional GRU (64 atau 256 unit)\n   ↓\nGlobal Max Pooling\n   ↓\nDropout (0,4)\n   ↓\nDense (64 neuron, ReLU)\n   ↓\nDropout (0,4)\n   ↓\nDense (2 neuron)  →  Positif / Negatif</pre>' +
+                '<h4 class="project-modal-doc-h4">Model Architecture</h4>' +
+                '<pre class="project-modal-doc-pre">Input (word index sequence)\n   ↓\nEmbedding (4 dimensions)\n   ↓\nBidirectional GRU (64 or 256 units)\n   ↓\nGlobal Max Pooling\n   ↓\nDropout (0.4)\n   ↓\nDense (64 neurons, ReLU)\n   ↓\nDropout (0.4)\n   ↓\nDense (2 neurons)  →  Positive / Negative</pre>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Parameter</th><th>Nilai</th></tr></thead>' +
+                    '<thead><tr><th>Parameter</th><th>Value</th></tr></thead>' +
                     '<tbody>' +
                       '<tr><th>Loss</th><td>Sparse Categorical Crossentropy (from_logits=True)</td></tr>' +
                       '<tr><th>Optimizer</th><td>Adam</td></tr>' +
-                      '<tr><th>Metrik</th><td>Accuracy</td></tr>' +
+                      '<tr><th>Metric</th><td>Accuracy</td></tr>' +
                       '<tr><th>Batch size</th><td>32</td></tr>' +
-                      '<tr><th>Dimensi embedding</th><td>4</td></tr>' +
+                      '<tr><th>Embedding dimension</th><td>4</td></tr>' +
                       '<tr><th>Dropout</th><td>40%</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
-                '<p class="project-modal-doc-p"><strong>Mengapa BiGRU?</strong> GRU satu arah hanya membaca teks dari kiri ke kanan. BiGRU membaca dari dua arah lalu menggabungkan hasilnya, sehingga konteks sebelum dan sesudah suatu kata sama-sama diperhitungkan. GRU juga lebih sederhana dibanding LSTM (hanya update gate dan reset gate), sehingga lebih ringan dilatih.</p>' +
-                '<p class="project-modal-doc-p"><strong>Perhitungan manual.</strong> Proyek ini menyertakan ilustrasi perhitungan satu langkah waktu GRU (update gate, reset gate, candidate hidden state, hidden state) pada kalimat contoh untuk menjelaskan mekanisme dasar model. Ilustrasi memakai nilai sederhana (embedding 2 dimensi, bobot skalar) sehingga bersifat edukatif dan tidak identik dengan model yang dilatih.</p>' +
+                '<p class="project-modal-doc-p"><strong>Why BiGRU?</strong> A unidirectional GRU reads text only from left to right. BiGRU processes sequences in both directions and combines their representations so both preceding and following context are captured. Compared to LSTM, GRU has a simpler gating mechanism (update gate and reset gate only), making it lighter to train.</p>' +
+                '<p class="project-modal-doc-p"><strong>Manual walkthrough.</strong> This project includes a step-by-step single-timestep GRU calculation (update gate, reset gate, candidate hidden state, hidden state) on a sample sentence to illustrate the core mechanism. The illustration uses simplified values (2D embeddings and scalar weights) for educational clarity rather than exact trained model weights.</p>' +
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Desain Eksperimen</h4>' +
+                '<h4 class="project-modal-doc-h4">Experimental Design</h4>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Variabel</th><th>Nilai yang diuji</th></tr></thead>' +
+                    '<thead><tr><th>Variable</th><th>Tested Values</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>Pembagian data (latih : uji)</th><td>90:10, 80:20, 70:30</td></tr>' +
-                      '<tr><th>Jumlah epoch</th><td>3 dan 5</td></tr>' +
-                      '<tr><th>Jumlah unit GRU</th><td>64 dan 256</td></tr>' +
+                      '<tr><th>Data split (train : test)</th><td>90:10, 80:20, 70:30</td></tr>' +
+                      '<tr><th>Epoch count</th><td>3 and 5</td></tr>' +
+                      '<tr><th>GRU unit count</th><td>64 and 256</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
-                '<p class="project-modal-doc-p">Total <strong>12 konfigurasi</strong>, masing-masing dijalankan satu kali.</p>' +
+                '<p class="project-modal-doc-p">Total of <strong>12 configurations</strong>, each executed once.</p>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Split</th><th>Data latih (negatif / positif)</th><th>Data uji (negatif / positif)</th></tr></thead>' +
+                    '<thead><tr><th>Split</th><th>Training set (negative / positive)</th><th>Test set (negative / positive)</th></tr></thead>' +
                     '<tbody>' +
                       '<tr><th>90:10</th><td>398 / 502</td><td>45 / 56</td></tr>' +
                       '<tr><th>80:20</th><td>354 / 446</td><td>89 / 112</td></tr>' +
@@ -6935,112 +6935,112 @@
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Hasil</h4>' +
-                '<h5 class="project-modal-doc-h5">Seluruh konfigurasi</h5>' +
+                '<h4 class="project-modal-doc-h4">Results</h4>' +
+                '<h5 class="project-modal-doc-h5">All configurations</h5>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Split</th><th>Unit</th><th>Epoch 3 (Acc / Loss)</th><th>Epoch 5 (Acc / Loss)</th></tr></thead>' +
+                    '<thead><tr><th>Split</th><th>Units</th><th>Epoch 3 (Acc / Loss)</th><th>Epoch 5 (Acc / Loss)</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>90:10</th><td>64</td><td>83% / 0,40</td><td>91% / 0,24</td></tr>' +
-                      '<tr><th>90:10</th><td>256</td><td>87% / 0,33</td><td>91% / 0,27</td></tr>' +
-                      '<tr><th>80:20</th><td>64</td><td>88% / 0,32</td><td>93% / 0,21</td></tr>' +
-                      '<tr><th>80:20</th><td>256</td><td>85% / 0,36</td><td><strong>94% / 0,19</strong></td></tr>' +
-                      '<tr><th>70:30</th><td>64</td><td>88% / 0,32</td><td>88% / 0,29</td></tr>' +
-                      '<tr><th>70:30</th><td>256</td><td>89% / 0,28</td><td>90% / 0,25</td></tr>' +
+                      '<tr><th>90:10</th><td>64</td><td>83% / 0.40</td><td>91% / 0.24</td></tr>' +
+                      '<tr><th>90:10</th><td>256</td><td>87% / 0.33</td><td>91% / 0.27</td></tr>' +
+                      '<tr><th>80:20</th><td>64</td><td>88% / 0.32</td><td>93% / 0.21</td></tr>' +
+                      '<tr><th>80:20</th><td>256</td><td>85% / 0.36</td><td><strong>94% / 0.19</strong></td></tr>' +
+                      '<tr><th>70:30</th><td>64</td><td>88% / 0.32</td><td>88% / 0.29</td></tr>' +
+                      '<tr><th>70:30</th><td>256</td><td>89% / 0.28</td><td>90% / 0.25</td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
 
-                '<h5 class="project-modal-doc-h5">Konfigurasi terbaik: 80:20 · 256 unit · 5 epoch — Confusion matrix</h5>' +
+                '<h5 class="project-modal-doc-h5">Best configuration: 80:20 · 256 units · 5 epochs — Confusion matrix</h5>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th></th><th>Prediksi Positif</th><th>Prediksi Negatif</th></tr></thead>' +
+                    '<thead><tr><th></th><th>Predicted Positive</th><th>Predicted Negative</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>Aktual Positif</th><td><strong>106</strong></td><td>6</td></tr>' +
-                      '<tr><th>Aktual Negatif</th><td>9</td><td><strong>80</strong></td></tr>' +
+                      '<tr><th>Actual Positive</th><td><strong>106</strong></td><td>6</td></tr>' +
+                      '<tr><th>Actual Negative</th><td>9</td><td><strong>80</strong></td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
 
-                '<h5 class="project-modal-doc-h5">Metrik per kelas (dihitung dari confusion matrix)</h5>' +
+                '<h5 class="project-modal-doc-h5">Per-class metrics (computed from confusion matrix)</h5>' +
                 '<div class="project-modal-doc-table-wrap">' +
                   '<table class="project-modal-doc-table">' +
-                    '<thead><tr><th>Kelas</th><th>Precision</th><th>Recall</th><th>F1-score</th></tr></thead>' +
+                    '<thead><tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1-score</th></tr></thead>' +
                     '<tbody>' +
-                      '<tr><th>Positif</th><td>92,2%</td><td>94,6%</td><td>93,4%</td></tr>' +
-                      '<tr><th>Negatif</th><td>93,0%</td><td>89,9%</td><td>91,4%</td></tr>' +
-                      '<tr><th>Akurasi keseluruhan</th><td>—</td><td>—</td><td><strong>92,5%</strong></td></tr>' +
-                    '</tbody>' +
-                  '</table>' +
-                '</div>' +
-              '</div>' +
-
-              '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Temuan</h4>' +
-                '<ul class="project-modal-list">' +
-                  '<li><strong>1. Lebih banyak epoch umumnya membantu.</strong> Pada split 80:20 dengan 64 unit, akurasi naik dari 88% ke 93% saat epoch dinaikkan dari 3 ke 5, dan loss turun dari 0,32 ke 0,21. Pada split 70:30 dengan 64 unit, akurasi tetap 88% tetapi loss tetap turun.</li>' +
-                  '<li><strong>2. Kapasitas lebih besar cenderung membantu, tetapi tidak selalu.</strong> 256 unit memberi hasil terbaik pada split 80:20, sedangkan pada split 90:10 hasilnya sama dengan 64 unit (91%). Konsekuensinya kebutuhan komputasi lebih tinggi.</li>' +
-                  '<li><strong>3. Split 80:20 paling seimbang.</strong> Split 90:10 menyisakan data uji yang sangat kecil (101 sampel) sehingga evaluasi kurang stabil, sedangkan 70:30 mengurangi data latih.</li>' +
-                  '<li><strong>4. Model sedikit lebih kuat pada kelas positif</strong> (F1 93,4%) dibanding kelas negatif (F1 91,4%), sejalan dengan proporsi data yang lebih banyak pada kelas positif.</li>' +
-                '</ul>' +
-                '<div class="project-modal-doc-note">Setiap konfigurasi dijalankan satu kali dengan data uji sekitar 100-200 sampel. Selisih 1-2 poin persentase setara dengan beberapa komentar saja, sehingga perbedaan kecil antar konfigurasi belum dapat dianggap signifikan secara statistik.</div>' +
-              '</div>' +
-
-              '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Keterbatasan</h4>' +
-                '<ul class="project-modal-list">' +
-                  '<li><strong>Data kecil</strong> (1.000 komentar) dan hanya dari <strong>satu fakultas</strong>, sehingga generalisasi ke fakultas lain belum teruji.</li>' +
-                  '<li><strong>Satu run per konfigurasi</strong>, tanpa cross-validation atau pengulangan dengan seed berbeda, sehingga variansi hasil belum diukur.</li>' +
-                  '<li><strong>Satu split dipakai untuk memilih konfigurasi sekaligus melaporkan hasil</strong>, sehingga akurasi berpotensi sedikit optimistis. Pemisahan train / validation / test yang tegas diperlukan.</li>' +
-                  '<li><strong>Preprocessing agresif.</strong> Stopword removal dapat menghapus kata negasi seperti &ldquo;tidak&rdquo;, dan stemming Sastrawi dapat mengubah makna kata (misalnya <em>mengerti</em> menjadi <em>erti</em>).</li>' +
-                  '<li><strong>Hanya dua kelas.</strong> Komentar yang berisi pujian sekaligus kritik harus masuk ke satu label, padahal kritik dan saran paling berguna bagi prodi.</li>' +
-                  '<li><strong>Epoch kecil (3 dan 5) dan embedding kecil (dimensi 4)</strong>, sehingga potensi model belum tereksplorasi penuh.</li>' +
-                  '<li><strong>Belum ada pembanding</strong> dengan GRU satu arah, LSTM, model klasik (TF-IDF + Logistic Regression), atau model berbasis transformer seperti IndoBERT.</li>' +
-                '</ul>' +
-              '</div>' +
-
-              '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Rencana Pengembangan</h4>' +
-                '<ul class="project-modal-list">' +
-                  '<li>Baseline klasik (TF-IDF + Logistic Regression / SVM / Naive Bayes)</li>' +
-                  '<li>Fine-tuning IndoBERT sebagai pembanding</li>' +
-                  '<li>Stratified k-fold cross-validation dan multi-seed (mean ± std)</li>' +
-                  '<li>Pemisahan train / validation / test yang tegas</li>' +
-                  '<li>Ablation preprocessing (mempertahankan negasi, tanpa stemming)</li>' +
-                  '<li>Early stopping dan kurva loss/akurasi train vs validation</li>' +
-                  '<li>Embedding pra-latih (misalnya FastText Bahasa Indonesia)</li>' +
-                  '<li>Penambahan kelas netral dan perluasan data ke fakultas lain</li>' +
-                  '<li>Aspect-based sentiment berdasarkan empat kriteria EDOM (kesiapan, materi, disiplin, evaluasi pengajar)</li>' +
-                  '<li>Error analysis dan demo interaktif (Streamlit / Hugging Face Spaces)</li>' +
-                '</ul>' +
-              '</div>' +
-
-              '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Etika dan Privasi Data</h4>' +
-                '<ul class="project-modal-list">' +
-                  '<li>Data berasal dari sistem EDOM Universitas Riau dan digunakan untuk keperluan penelitian akademik.</li>' +
-                  '<li>Nama dosen dan informasi yang dapat mengidentifikasi individu telah dianonimkan (contoh: &ldquo;Bapak/Ibu XYZ&rdquo;).</li>' +
-                  '<li>Hasil model tidak dimaksudkan sebagai satu-satunya dasar penilaian kinerja dosen, melainkan alat bantu untuk meringkas umpan balik mahasiswa.</li>' +
-                '</ul>' +
-              '</div>' +
-
-              '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Teknologi</h4>' +
-                '<div class="project-modal-doc-table-wrap">' +
-                  '<table class="project-modal-doc-table">' +
-                    '<tbody>' +
-                      '<tr><th>Bahasa dan library</th><td>Python · TensorFlow · Keras · Pandas · NumPy · Sastrawi · Matplotlib</td></tr>' +
-                      '<tr><th>Tools</th><td>Jupyter Notebook · Microsoft Excel (pelabelan) · Git/GitHub</td></tr>' +
-                      '<tr><th>Lingkungan</th><td>Apple M2, RAM 8 GB, macOS Sonoma 14.4.1</td></tr>' +
+                      '<tr><th>Positive</th><td>92.2%</td><td>94.6%</td><td>93.4%</td></tr>' +
+                      '<tr><th>Negative</th><td>93.0%</td><td>89.9%</td><td>91.4%</td></tr>' +
+                      '<tr><th>Overall accuracy</th><td>—</td><td>—</td><td><strong>92.5%</strong></td></tr>' +
                     '</tbody>' +
                   '</table>' +
                 '</div>' +
               '</div>' +
 
               '<div class="project-modal-doc-sec">' +
-                '<h4 class="project-modal-doc-h4">Penulis</h4>' +
-                '<p class="project-modal-doc-p"><strong>Annisya Fatihaturrahma</strong><br />Lulusan Sistem Informasi, Universitas Riau<br />Email: annisyafatihaturrahma@gmail.com</p>' +
-                '<p class="project-modal-doc-p">Terbuka untuk peluang sebagai <strong>Data Scientist / NLP &amp; ML Engineer (junior)</strong>.<br /><em>Proyek ini dikembangkan sebagai bagian dari skripsi di Universitas Riau.</em></p>' +
+                '<h4 class="project-modal-doc-h4">Key Findings</h4>' +
+                '<ul class="project-modal-list">' +
+                  '<li><strong>1. More epochs generally help.</strong> On the 80:20 split with 64 units, accuracy rose from 88% to 93% when epochs increased from 3 to 5, while loss dropped from 0.32 to 0.21. On the 70:30 split with 64 units, accuracy stayed at 88% while loss still decreased.</li>' +
+                  '<li><strong>2. Higher capacity tends to help, though not universally.</strong> 256 units delivered the best result on the 80:20 split, whereas on the 90:10 split it matched 64 units (91%) at a higher computational cost.</li>' +
+                  '<li><strong>3. The 80:20 split is the most balanced.</strong> A 90:10 split leaves a very small test set (101 samples), making evaluation less stable, while 70:30 reduces available training data.</li>' +
+                  '<li><strong>4. Slightly stronger on the positive class</strong> (F1 93.4%) than the negative class (F1 91.4%), consistent with the larger share of positive samples.</li>' +
+                '</ul>' +
+                '<div class="project-modal-doc-note">Each configuration was run once with a test set of roughly 100–200 samples. A 1–2 percentage point difference corresponds to only a few comments, so small differences between configurations cannot be considered statistically significant.</div>' +
+              '</div>' +
+
+              '<div class="project-modal-doc-sec">' +
+                '<h4 class="project-modal-doc-h4">Limitations</h4>' +
+                '<ul class="project-modal-list">' +
+                  '<li><strong>Small dataset</strong> (1,000 comments) sourced from <strong>a single faculty</strong>, so cross-faculty generalization has not yet been tested.</li>' +
+                  '<li><strong>Single run per configuration</strong> without cross-validation or multi-seed repeats, leaving result variance unmeasured.</li>' +
+                  '<li><strong>Same split used for both model selection and reporting</strong>, which may yield slightly optimistic accuracy. A strict train / validation / test split is needed.</li>' +
+                  '<li><strong>Aggressive preprocessing.</strong> Stopword removal can strip negation words such as &ldquo;tidak&rdquo; (not), and Sastrawi stemming can alter word meaning (e.g., <em>mengerti</em> reduced to <em>erti</em>).</li>' +
+                  '<li><strong>Binary classes only.</strong> Comments containing both praise and critique must be assigned a single label, even though actionable critiques and suggestions are most useful for study programs.</li>' +
+                  '<li><strong>Few epochs (3 and 5) and small embedding size (4 dimensions)</strong>, leaving higher-capacity configurations underexplored.</li>' +
+                  '<li><strong>No baseline comparison yet</strong> against unidirectional GRU, LSTM, classical models (TF-IDF + Logistic Regression), or transformer-based models such as IndoBERT.</li>' +
+                '</ul>' +
+              '</div>' +
+
+              '<div class="project-modal-doc-sec">' +
+                '<h4 class="project-modal-doc-h4">Future Roadmap</h4>' +
+                '<ul class="project-modal-list">' +
+                  '<li>Classical baselines (TF-IDF + Logistic Regression / SVM / Naive Bayes)</li>' +
+                  '<li>Fine-tuning IndoBERT as a transformer benchmark</li>' +
+                  '<li>Stratified k-fold cross-validation and multi-seed runs (mean ± std)</li>' +
+                  '<li>Strict train / validation / test data partitioning</li>' +
+                  '<li>Preprocessing ablation (preserving negation words, without stemming)</li>' +
+                  '<li>Early stopping and train vs. validation loss/accuracy learning curves</li>' +
+                  '<li>Pre-trained embeddings (e.g., Indonesian FastText)</li>' +
+                  '<li>Adding a neutral class and expanding data collection across additional faculties</li>' +
+                  '<li>Aspect-based sentiment aligned with the four EDOM criteria (readiness, material, discipline, instructor evaluation)</li>' +
+                  '<li>Error analysis and an interactive demo (Streamlit / Hugging Face Spaces)</li>' +
+                '</ul>' +
+              '</div>' +
+
+              '<div class="project-modal-doc-sec">' +
+                '<h4 class="project-modal-doc-h4">Data Ethics &amp; Privacy</h4>' +
+                '<ul class="project-modal-list">' +
+                  '<li>Data was sourced from Universitas Riau\'s EDOM system and used strictly for academic research.</li>' +
+                  '<li>Lecturer names and personally identifiable details were anonymized (e.g., &ldquo;Mr./Ms. XYZ&rdquo;).</li>' +
+                  '<li>Model predictions are not intended as the sole basis for lecturer performance evaluation, but as an assistive tool to summarize student feedback.</li>' +
+                '</ul>' +
+              '</div>' +
+
+              '<div class="project-modal-doc-sec">' +
+                '<h4 class="project-modal-doc-h4">Technology Stack</h4>' +
+                '<div class="project-modal-doc-table-wrap">' +
+                  '<table class="project-modal-doc-table">' +
+                    '<tbody>' +
+                      '<tr><th>Languages &amp; libraries</th><td>Python · TensorFlow · Keras · Pandas · NumPy · Sastrawi · Matplotlib</td></tr>' +
+                      '<tr><th>Tools</th><td>Jupyter Notebook · Microsoft Excel (annotation) · Git/GitHub</td></tr>' +
+                      '<tr><th>Environment</th><td>Apple M2, 8 GB RAM, macOS Sonoma 14.4.1</td></tr>' +
+                    '</tbody>' +
+                  '</table>' +
+                '</div>' +
+              '</div>' +
+
+              '<div class="project-modal-doc-sec">' +
+                '<h4 class="project-modal-doc-h4">Author</h4>' +
+                '<p class="project-modal-doc-p"><strong>Annisya Fatihaturrahma</strong><br />Information Systems Graduate, Universitas Riau<br />Email: annisyafatihaturrahma@gmail.com</p>' +
+                '<p class="project-modal-doc-p">Open to opportunities as a <strong>Data Scientist / NLP &amp; ML Engineer (Junior)</strong>.<br /><em>This project was developed as an undergraduate thesis at Universitas Riau.</em></p>' +
               '</div>',
             links: [
               {
@@ -7412,6 +7412,10 @@
 
     <script type="module">
       import * as d3 from 'd3';
+      import bundledCvPdfUrl from './src/assets/cv-annisya-fatihaturrahma.pdf';
+
+      window.__bundledCvPdfUrl = bundledCvPdfUrl;
+      window.dispatchEvent(new CustomEvent('cvassetready', { detail: bundledCvPdfUrl }));
 
       const stages = [
         {
@@ -8008,46 +8012,128 @@
 
         window.addEventListener('themechange', () => renderRoadmapSvg(mobileMq.matches, true));
       }
+    </script>
 
+    <script>
       (function () {
         var cvLink = document.getElementById('header-cv-link');
-        if (!cvLink || typeof window.fetch !== 'function') return;
+        if (!cvLink) return;
 
-        var resumeUrl = new URL('./resume.html', window.location.href).href;
-        var pdfCandidates = [
-          new URL('./cv-annisya-fatihaturrahma.pdf', window.location.href).href,
-          new URL('./assets/aistudio/Annisya_F_recent_CV_287a4096.pdf', window.location.href).href
-        ];
+        var baseHref = document.baseURI || window.location.href;
+        var resolvedMode = 'checking';
+        var resolvedUrl = '';
+        var bundledTried = false;
 
-        fetch(resumeUrl, { method: 'GET', credentials: 'same-origin' })
-          .then(function (res) {
-            if (!res.ok) throw new Error('Resume route unavailable');
-            return res.text();
-          })
-          .then(function (html) {
-            if (html.indexOf('resume-paper') !== -1) {
-              cvLink.setAttribute('href', resumeUrl);
+        function toAbs(relOrUrl) {
+          try {
+            return new URL(relOrUrl, baseHref).href;
+          } catch (err) {
+            return relOrUrl;
+          }
+        }
+
+        function checkHtmlCandidate(url) {
+          return fetch(url, { method: 'GET', credentials: 'same-origin' }).then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.text().then(function (html) {
+              if (html && html.indexOf('resume-paper') !== -1) {
+                return url;
+              }
+              throw new Error('Not resume.html');
+            });
+          });
+        }
+
+        function checkPdfCandidate(url) {
+          return fetch(url, { method: 'GET', credentials: 'same-origin' }).then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            var ct = (res.headers.get('content-type') || '').toLowerCase();
+            return res.arrayBuffer().then(function (buf) {
+              var bytes = new Uint8Array(buf.slice(0, 5));
+              var header = '';
+              for (var i = 0; i < bytes.length; i++) {
+                header += String.fromCharCode(bytes[i]);
+              }
+              if (header === '%PDF-' || ct.indexOf('application/pdf') !== -1) {
+                return url;
+              }
+              throw new Error('Not a PDF');
+            });
+          });
+        }
+
+        function setVerifiedUrl(url) {
+          resolvedMode = 'url';
+          resolvedUrl = url;
+          cvLink.setAttribute('href', url);
+          cvLink.setAttribute('target', '_blank');
+          cvLink.setAttribute('rel', 'noopener noreferrer');
+        }
+
+        function probeAllCandidates() {
+          if (typeof window.fetch !== 'function') return;
+
+          var htmlCandidates = [toAbs('./resume.html'), toAbs('./public/resume.html')];
+          var pdfCandidates = [];
+          if (window.__bundledCvPdfUrl) {
+            bundledTried = true;
+            pdfCandidates.push(toAbs(window.__bundledCvPdfUrl));
+          }
+          pdfCandidates.push(
+            toAbs('./cv-annisya-fatihaturrahma.pdf'),
+            toAbs('./public/cv-annisya-fatihaturrahma.pdf'),
+            toAbs('./assets/aistudio/Annisya_F_recent_CV_287a4096.pdf'),
+            toAbs('./public/assets/aistudio/Annisya_F_recent_CV_287a4096.pdf')
+          );
+
+          function tryHtml(idx) {
+            if (idx >= htmlCandidates.length) return tryPdf(0);
+            return checkHtmlCandidate(htmlCandidates[idx])
+              .then(setVerifiedUrl)
+              .catch(function () {
+                return tryHtml(idx + 1);
+              });
+          }
+
+          function tryPdf(idx) {
+            if (idx >= pdfCandidates.length) {
+              resolvedMode = 'unavailable';
               return;
             }
-            throw new Error('Fallback HTML returned instead of resume.html');
-          })
-          .catch(function () {
-            (function tryNextPdf(idx) {
-              if (idx >= pdfCandidates.length) return;
-              fetch(pdfCandidates[idx], { method: 'HEAD', credentials: 'same-origin' })
-                .then(function (res) {
-                  var ct = (res.headers.get('content-type') || '').toLowerCase();
-                  if (res.ok && (ct.indexOf('pdf') !== -1 || ct.indexOf('octet-stream') !== -1)) {
-                    cvLink.setAttribute('href', pdfCandidates[idx]);
-                    return;
-                  }
-                  tryNextPdf(idx + 1);
-                })
-                .catch(function () {
-                  tryNextPdf(idx + 1);
-                });
-            })(0);
-          });
+            return checkPdfCandidate(pdfCandidates[idx])
+              .then(setVerifiedUrl)
+              .catch(function () {
+                return tryPdf(idx + 1);
+              });
+          }
+
+          tryHtml(0);
+        }
+
+        window.addEventListener('cvassetready', function (e) {
+          if (resolvedMode === 'url' || bundledTried || !e || !e.detail) return;
+          bundledTried = true;
+          var url = toAbs(e.detail);
+          checkPdfCandidate(url)
+            .then(setVerifiedUrl)
+            .catch(function () {});
+        });
+
+        cvLink.addEventListener('click', function (e) {
+          if (resolvedMode === 'url' && resolvedUrl) {
+            cvLink.setAttribute('href', resolvedUrl);
+            return;
+          }
+          if (resolvedMode === 'unavailable' && window.__bundledCvPdfUrl) {
+            cvLink.setAttribute('href', toAbs(window.__bundledCvPdfUrl));
+            return;
+          }
+          if (resolvedMode === 'checking' && window.__bundledCvPdfUrl) {
+            cvLink.setAttribute('href', toAbs(window.__bundledCvPdfUrl));
+          }
+        });
+
+        probeAllCandidates();
       })();
     </script>
   </body>
