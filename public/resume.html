@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume — Annisya Fatihaturrahma | Data &amp; AI Engineer</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae and Resume of Annisya Fatihaturrahma — Data &amp; AI Engineer experienced in Data Analytics, Machine Learning, Computer Vision, and NLP."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-canvas: #0a0c0d;
+        --paper-bg: #ffffff;
+        --ink: #0f172a;
+        --ink-secondary: #334155;
+        --ink-muted: #475569;
+        --accent: #059669;
+        --accent-soft: #ecfdf5;
+        --accent-border: #a7f3d0;
+        --border: #e2e8f0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--ink);
+        background: var(--bg-canvas);
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.5;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Sticky Top Toolbar (hidden when printing) */
+      .resume-toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background: rgba(10, 12, 13, 0.88);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .resume-toolbar-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .toolbar-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #f8fafc;
+        font-size: 13.5px;
+        font-weight: 500;
+        padding: 7px 12px;
+        border-radius: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.05);
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+
+      .toolbar-back:hover {
+        text-decoration: none;
+        border-color: rgba(16, 185, 129, 0.6);
+        background: rgba(16, 185, 129, 0.12);
+      }
+
+      .toolbar-actions {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .toolbar-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 14px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+        color: #ffffff;
+        transition: background 0.2s ease, border-color 0.2s ease;
+      }
+
+      .toolbar-btn:hover {
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.35);
+      }
+
+      .toolbar-btn--primary {
+        background: #10b981;
+        border-color: #10b981;
+        color: #032219;
+      }
+
+      .toolbar-btn--primary:hover {
+        background: #34d399;
+        border-color: #34d399;
+      }
+
+      .toolbar-btn svg {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+      }
+
+      /* Paper Container */
+      .resume-shell {
+        padding: 28px 16px 56px;
+      }
+
+      .resume-paper {
+        max-width: 860px;
+        margin: 0 auto;
+        background: var(--paper-bg);
+        border-radius: 10px;
+        padding: 42px 46px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      }
+
+      /* Header */
+      .cv-header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+      }
+
+      .cv-name-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .cv-name {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: var(--ink);
+      }
+
+      .cv-role {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--accent);
+        letter-spacing: 0.02em;
+      }
+
+      .cv-contact {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 12px;
+        font-size: 12.5px;
+        color: var(--ink-secondary);
+      }
+
+      .cv-contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .cv-sep {
+        color: #94a3b8;
+      }
+
+      /* Sections */
+      .cv-section {
+        margin-bottom: 20px;
+      }
+
+      .cv-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .cv-section-title {
+        margin: 0 0 10px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .cv-summary {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--ink-secondary);
+      }
+
+      /* Entry blocks */
+      .cv-entry {
+        margin-bottom: 14px;
+      }
+
+      .cv-entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .cv-entry-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .cv-entry-title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .cv-entry-org {
+        font-weight: 600;
+        color: var(--ink-secondary);
+      }
+
+      .cv-entry-meta {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--ink-muted);
+        white-space: nowrap;
+      }
+
+      .cv-entry-sub {
+        margin-top: 2px;
+        font-size: 12.5px;
+        color: var(--ink-muted);
+      }
+
+      .cv-bullets {
+        margin: 6px 0 0;
+        padding-left: 18px;
+        font-size: 12.6px;
+        line-height: 1.54;
+        color: var(--ink-secondary);
+      }
+
+      .cv-bullets li {
+        margin-bottom: 3px;
+      }
+
+      .cv-bullets li:last-child {
+        margin-bottom: 0;
+      }
+
+      .cv-tools-line {
+        margin-top: 5px;
+        font-size: 12px;
+        color: var(--ink-muted);
+      }
+
+      .cv-tools-line strong {
+        color: var(--ink-secondary);
+      }
+
+      /* Projects Grid / List */
+      .cv-project-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .cv-project-links {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11.8px;
+        font-weight: 600;
+      }
+
+      .cv-project-tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--accent);
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-border);
+        border-radius: 4px;
+        padding: 1px 6px;
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+
+      /* Skills Table */
+      .cv-skills-grid {
+        display: grid;
+        grid-template-columns: 185px 1fr;
+        gap: 6px 14px;
+        font-size: 12.5px;
+        line-height: 1.5;
+      }
+
+      .cv-skill-cat {
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .cv-skill-vals {
+        color: var(--ink-secondary);
+      }
+
+      /* Certifications Grid */
+      .cv-cert-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px 18px;
+      }
+
+      .cv-cert-item {
+        font-size: 12px;
+        line-height: 1.42;
+        color: var(--ink-secondary);
+        padding-left: 10px;
+        border-left: 2px solid var(--accent-border);
+      }
+
+      .cv-cert-name {
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      .cv-cert-meta {
+        color: var(--ink-muted);
+        font-size: 11.3px;
+      }
+
+      @media (max-width: 720px) {
+        .resume-toolbar-inner {
+          padding: 10px 14px;
+        }
+
+        .toolbar-back,
+        .toolbar-btn {
+          min-height: 42px;
+          padding: 8px 12px;
+          font-size: 12.5px;
+        }
+
+        .resume-shell {
+          padding: 16px 10px 40px;
+        }
+
+        .resume-paper {
+          padding: 22px 16px;
+          border-radius: 8px;
+        }
+
+        .cv-name {
+          font-size: 22px;
+        }
+
+        .cv-entry-meta {
+          white-space: normal;
+        }
+
+        .cv-project-links {
+          flex-wrap: wrap;
+        }
+
+        .cv-skills-grid {
+          grid-template-columns: 1fr;
+          gap: 3px;
+        }
+
+        .cv-skill-cat {
+          margin-top: 6px;
+        }
+
+        .cv-cert-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        @page {
+          size: A4;
+          margin: 11mm 13mm;
+        }
+
+        html,
+        body {
+          background: #ffffff !important;
+          color: #000000;
+        }
+
+        .resume-toolbar {
+          display: none !important;
+        }
+
+        .resume-shell {
+          padding: 0;
+        }
+
+        .resume-paper {
+          max-width: 100%;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        a {
+          color: var(--accent);
+        }
+
+        .cv-entry,
+        .cv-cert-item {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-toolbar">
+      <div class="resume-toolbar-inner">
+        <a href="/" class="toolbar-back">
+          <span aria-hidden="true">←</span>
+          <span>Back to Portfolio</span>
+        </a>
+
+        <div class="toolbar-actions">
+          <button type="button" class="toolbar-btn" onclick="window.print()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9" />
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+              <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+
+          <a
+            href="/cv-annisya-fatihaturrahma.pdf"
+            download="Annisya_Fatihaturrahma_Resume.pdf"
+            class="toolbar-btn toolbar-btn--primary"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download PDF</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="resume-shell">
+      <article class="resume-paper" aria-label="Resume of Annisya Fatihaturrahma">
+        <header class="cv-header">
+          <div class="cv-name-row">
+            <h1 class="cv-name">Annisya Fatihaturrahma</h1>
+            <span class="cv-role">Data &amp; AI Engineer</span>
+          </div>
+          <div class="cv-contact">
+            <span class="cv-contact-item">Pekanbaru, Indonesia</span>
+            <span class="cv-sep" aria-hidden="true">·</span>
+            <a class="cv-contact-item" href="mailto:annisyafatihaturrahma@gmail.com">annisyafatihaturrahma@gmail.com</a>
+            <span class="cv-sep" aria-hidden="true">·</span>
+            <a class="cv-contact-item" href="https://wa.me/6281806700061" target="_blank" rel="noopener noreferrer">+62 818-0670-0061</a>
+            <span class="cv-sep" aria-hidden="true">·</span>
+            <a class="cv-contact-item" href="https://www.linkedin.com/in/annisyaf" target="_blank" rel="noopener noreferrer">linkedin.com/in/annisyaf</a>
+            <span class="cv-sep" aria-hidden="true">·</span>
+            <a class="cv-contact-item" href="https://github.com/annisyaaa" target="_blank" rel="noopener noreferrer">github.com/annisyaaa</a>
+            <span class="cv-sep" aria-hidden="true">·</span>
+            <a class="cv-contact-item" href="https://annisyaf.web.id" target="_blank" rel="noopener noreferrer">annisyaf.web.id</a>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Professional Summary</h2>
+          <p class="cv-summary">
+            Information Systems graduate (Universitas Riau, GPA 3.34/4.00) passionate about transforming raw data into meaningful insights and engineering intelligent systems through Artificial Intelligence. Experienced across <strong>Data Analytics</strong> (SQL, Google BigQuery, Power BI, Tableau, Looker Studio), <strong>Data Science &amp; Machine Learning</strong> (Python, Scikit-learn, XGBoost, LightGBM, classification, regression, time-series forecasting), and <strong>AI Engineering</strong> (TensorFlow, Keras, PyTorch, YOLO, OpenCV, BiGRU NLP, MoveNet pose estimation, TensorFlow Lite, QGIS geospatial processing). Driven by analytical thinking, clean reproducible workflows, data quality, and measurable real-world impact.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Work &amp; Internship Experience</h2>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <h3 class="cv-entry-title">
+                Data &amp; AI Engineer Intern <span class="cv-entry-org">— SawitPRO</span>
+              </h3>
+              <span class="cv-entry-meta">Pekanbaru, Indonesia · July 2026 – Present</span>
+            </div>
+            <ul class="cv-bullets">
+              <li><strong>Geospatial Data Processing:</strong> Processed and labeled geospatial data covering <strong>1,800+ hectares</strong> of oil palm plantations using QGIS to support agricultural analytics and AI initiatives.</li>
+              <li><strong>Dataset Preparation &amp; QA:</strong> Processed, annotated, and validated <strong>25,000+ images</strong> to prepare high-quality datasets for machine learning model training and evaluation.</li>
+              <li><strong>AI Model &amp; Feature Assessment:</strong> Evaluated <strong>4 AI-powered assessment features</strong> covering plant health detection, planting distance measurement, blank space identification, and thinning detection; contributed to computer vision model development using <strong>YOLO</strong> and <strong>TensorFlow</strong>.</li>
+              <li><strong>Operational Data &amp; Reporting:</strong> Built and maintained operational dashboards, structured datasets, and AI assessment reports; managed and validated transportation records and SupirPRO datasets for reporting reliability.</li>
+            </ul>
+            <div class="cv-tools-line">
+              <strong>Tools:</strong> Python · YOLO · TensorFlow · QGIS · Computer Vision · Excel · Data Labeling &amp; Validation
+            </div>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <h3 class="cv-entry-title">
+                Big Data Analytics Intern <span class="cv-entry-org">— Kimia Farma × Rakamin Academy</span>
+              </h3>
+              <span class="cv-entry-meta">Project-Based Virtual Internship · Oct 2024 – Nov 2024</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Analyzed pharmaceutical sales, product performance, and branch-level business metrics across <strong>2020–2023</strong> to identify sales trends and growth gaps.</li>
+              <li>Utilized <strong>Google BigQuery</strong> and <strong>SQL</strong> to query, clean, transform, and organize large-scale business datasets into structured analytical tables.</li>
+              <li>Built interactive <strong>Looker Studio</strong> KPI dashboards and delivered exploratory data analysis (EDA) reports with actionable business recommendations.</li>
+            </ul>
+            <div class="cv-tools-line">
+              <strong>Tools:</strong> SQL · Google BigQuery · Looker Studio · Exploratory Data Analysis · Business Intelligence
+            </div>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <h3 class="cv-entry-title">
+                Student Intern <span class="cv-entry-org">— PT Pegadaian</span>
+              </h3>
+              <span class="cv-entry-meta">Pekanbaru, Indonesia · Jan 2022 – Mar 2022</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Assisted in assessing gold and electronic items used as collateral for pawn transactions, supporting asset valuation and appraisal processes.</li>
+              <li>Organized, maintained, and verified collateral appraisal records, customer verification data, and daily operational reporting for financial service workflows.</li>
+            </ul>
+            <div class="cv-tools-line">
+              <strong>Skills:</strong> Data Management · Asset Evaluation · Documentation · Customer Verification · Operational Administration
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Education &amp; Intensive Training</h2>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <h3 class="cv-entry-title">
+                Universitas Riau <span class="cv-entry-org">— Bachelor Degree in Computer Science (Information Systems)</span>
+              </h3>
+              <span class="cv-entry-meta">Pekanbaru, Indonesia · 2020 – 2026 · GPA: 3.34 / 4.00</span>
+            </div>
+            <ul class="cv-bullets">
+              <li><strong>Undergraduate Thesis:</strong> <em>Implementation of Bidirectional Gated Recurrent Unit (BiGRU) in Sentiment Analysis of Student Evaluations of Lecturers (EDOM) at FKIP Universitas Riau</em>.</li>
+              <li>Curated and dual-annotated 1,000 Indonesian student comments (Semester Ganjil 2022/2023), applied Sastrawi NLP preprocessing, and benchmarked 12 BiGRU configurations (splits 90:10 / 80:20 / 70:30, 3 &amp; 5 epochs, 64 &amp; 256 GRU units), achieving <strong>92.5% test accuracy (186/201)</strong> on 80:20 · 256 units · 5 epochs (94% / 0.19 validation run).</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <h3 class="cv-entry-title">
+                Bangkit Academy (by Google, Gojek &amp; Tokopedia) <span class="cv-entry-org">— Machine Learning Cohort</span>
+              </h3>
+              <span class="cv-entry-meta">Jakarta, Indonesia · Feb 2023 – Jul 2023</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Completed intensive national AI &amp; Machine Learning engineering program covering data preprocessing, deep learning architectures, model evaluation, and end-to-end capstone deployment (<em>Fitnesskan</em>).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Selected Projects &amp; Portfolio Archive</h2>
+
+          <div class="cv-entry">
+            <div class="cv-project-head">
+              <h3 class="cv-entry-title">
+                Fitnesskan — Virtual Personal Trainer
+                <span class="cv-project-tag">ML &amp; AI · Pose Estimation</span>
+              </h3>
+              <div class="cv-project-links">
+                <a href="https://github.com/gimmesince/Fitnesskan" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://annisyaf.notion.site/Project-bfa6ee7755a54581895ac1c4b736c239?p=391808d5249646848632726a712936d2&pm=c&pvs=31" target="_blank" rel="noopener noreferrer">Details ↗</a>
+                <a href="https://www.canva.com/design/DAFlt7Un-CA/FZ1EPv3ZEeSq1Fq08Jmpxg/view?utm_content=DAFlt7Un-CA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">Deck ↗</a>
+              </div>
+            </div>
+            <ul class="cv-bullets">
+              <li>Served as <strong>Machine Learning Engineer</strong> building an accessible Android virtual personal trainer for personalized workout guidance and real-time pose tracking.</li>
+              <li>Collected balanced workout gesture data, trained <strong>CNN &amp; MoveNet SinglePose Thunder</strong> models in TensorFlow/Keras &amp; PyTorch, validated with accuracy/precision/recall/F1 &amp; confusion matrix, and deployed to Android (Kotlin) via <strong>TensorFlow Lite</strong> and Docker.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-project-head">
+              <h3 class="cv-entry-title">
+                Bank Portuguese Term Deposit Telemarketing Prediction
+                <span class="cv-project-tag">Data Science · Data Analyst</span>
+              </h3>
+              <div class="cv-project-links">
+                <a href="https://github.com/annisyaaa/Banking-Dataset-Marketing-Targets" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+            <ul class="cv-bullets">
+              <li>Built a customer subscription classification pipeline across <strong>45,211 records (18 columns)</strong> using IQR outlier filtering, Label/One-Hot encoding, StandardScaler, <strong>SMOTE</strong> balancing, and cross-validated tuning (Logistic Regression, Random Forest GridSearch, XGBoost RandomizedSearch).</li>
+              <li>Achieved <strong>0.97–0.99 ROC-AUC</strong>, <strong>+710% conversion rate</strong>, <strong>88.9% telemarketing cost reduction</strong> (€840,924 → €92,375), and <strong>+95.3% net profit increase</strong> (€686,327 → €1,343,050).</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-project-head">
+              <h3 class="cv-entry-title">
+                Analisis Sentimen Evaluasi Dosen oleh Mahasiswa (EDOM) dengan Bidirectional GRU
+                <span class="cv-project-tag">ML &amp; AI · NLP</span>
+              </h3>
+              <div class="cv-project-links">
+                <a href="https://github.com/annisyaaa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+            <ul class="cv-bullets">
+              <li>Automated sentiment classification of 1,000 Indonesian student comments at FKIP Universitas Riau using <strong>Python 3.x, TensorFlow/Keras, BiGRU, and Sastrawi</strong>, achieving <strong>92.5% test accuracy</strong> (186/201; Positive F1 93.4%, Negative F1 91.4%) across 12 experimental configurations.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-project-head">
+              <h3 class="cv-entry-title">
+                HR Job Change Prediction: Employee Attrition Prediction Dashboard
+                <span class="cv-project-tag">Data Analyst · Data Science</span>
+              </h3>
+              <div class="cv-project-links">
+                <a href="https://github.com/annisyaaa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+            <ul class="cv-bullets">
+              <li>Combined employee attrition &amp; job-change binary classification (Python, Pandas, Scikit-learn, SQL) with an interactive BI retention dashboard surfacing flight-risk segments and turnover drivers.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-project-head">
+              <h3 class="cv-entry-title">
+                Pekanbaru House Pricing Prediction
+                <span class="cv-project-tag">Data Science · ML &amp; AI</span>
+              </h3>
+              <div class="cv-project-links">
+                <a href="https://github.com/annisyaaa/Prediksi-Harga-Properti-Rumah-Di-Pekanbaru" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+            <ul class="cv-bullets">
+              <li>Developed a supervised regression pipeline (Python, Pandas, NumPy, Scikit-learn) estimating Pekanbaru residential property prices using spatial, structural, and property specification features.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Technical &amp; Soft Skills</h2>
+          <div class="cv-skills-grid">
+            <div class="cv-skill-cat">Programming Languages</div>
+            <div class="cv-skill-vals">Python, SQL, JavaScript, Kotlin</div>
+
+            <div class="cv-skill-cat">Data Analytics &amp; BI</div>
+            <div class="cv-skill-vals">Exploratory Data Analysis (EDA), Data Cleaning &amp; Preprocessing, KPI Monitoring, Microsoft Excel, Power BI, Tableau, Looker Studio</div>
+
+            <div class="cv-skill-cat">Machine Learning &amp; DS</div>
+            <div class="cv-skill-vals">Scikit-learn, Pandas, NumPy, XGBoost, LightGBM, Feature Engineering, Classification, Regression, Statistical Analysis, Time Series Forecasting, SMOTE, Model Evaluation &amp; Cross-Validation</div>
+
+            <div class="cv-skill-cat">AI &amp; Deep Learning</div>
+            <div class="cv-skill-vals">TensorFlow, Keras, PyTorch, TensorFlow Lite, Computer Vision, Natural Language Processing (NLP), OpenCV, MediaPipe, YOLO, MoveNet SinglePose Thunder, Bidirectional GRU (BiGRU), Sastrawi</div>
+
+            <div class="cv-skill-cat">Databases &amp; Tools</div>
+            <div class="cv-skill-vals">Google BigQuery, MySQL, PostgreSQL, QGIS, Docker, Git, GitHub, Jupyter Notebook, Google Colab, Visual Studio Code, PyCharm, Android Studio</div>
+
+            <div class="cv-skill-cat">Data Operations</div>
+            <div class="cv-skill-vals">Data Labeling &amp; Annotation, Dataset Preparation, Data Validation, Data Quality Assurance, Geospatial Data Processing</div>
+
+            <div class="cv-skill-cat">Soft Skills</div>
+            <div class="cv-skill-vals">Analytical Thinking, Problem-Solving, Critical Thinking, Attention to Detail, Teamwork &amp; Collaboration, Communication, Leadership, Time Management, Adaptability, Continuous Learning</div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Licenses &amp; Verified Certifications (13 Credentials)</h2>
+          <div class="cv-cert-grid">
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/specialization/2PMZK5ZLV2AE" target="_blank" rel="noopener noreferrer">TensorFlow: Data and Deployment</a>
+              </div>
+              <div class="cv-cert-meta">Coursera · Jun 2023 · ID: 2PMZK5ZLV2AE</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/specialization/YNSTAWGVCXPM" target="_blank" rel="noopener noreferrer">DeepLearning.AI TensorFlow Developer Specialization</a>
+              </div>
+              <div class="cv-cert-meta">Coursera · May 2023 · ID: YNSTAWGVCXPM</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/specialization/FBVUKBXNJJJ9" target="_blank" rel="noopener noreferrer">Machine Learning Specialization</a>
+              </div>
+              <div class="cv-cert-meta">Stanford University · Apr 2023 · ID: FBVUKBXNJJJ9</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/specialization/2PPK97CQ5UEZ" target="_blank" rel="noopener noreferrer">Mathematics for Machine Learning</a>
+              </div>
+              <div class="cv-cert-meta">Imperial College London · Mar 2023 · ID: 2PPK97CQ5UEZ</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/4HB7YCQHHQDV" target="_blank" rel="noopener noreferrer">Process Data from Dirty to Clean</a>
+              </div>
+              <div class="cv-cert-meta">Coursera / Google · Mar 2023 · ID: 4HB7YCQHHQDV</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/2LJXAM6FLY2L" target="_blank" rel="noopener noreferrer">Prepare Data For Exploration</a>
+              </div>
+              <div class="cv-cert-meta">Coursera / Google · Mar 2023 · ID: 2LJXAM6FLY2L</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/RYU5595HSVGW" target="_blank" rel="noopener noreferrer">Ask Questions to Make Data-Driven Decisions</a>
+              </div>
+              <div class="cv-cert-meta">Coursera / Google · Mar 2023 · ID: RYU5595HSVGW</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/RF345WW9P2FC" target="_blank" rel="noopener noreferrer">Foundations: Data, Data, Everywhere</a>
+              </div>
+              <div class="cv-cert-meta">Coursera / Google · Mar 2023 · ID: RF345WW9P2FC</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/KZUM2GKLMZPK" target="_blank" rel="noopener noreferrer">Troubleshooting and Debugging Techniques</a>
+              </div>
+              <div class="cv-cert-meta">Coursera / Google · ID: KZUM2GKLMZPK</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/URVACUBKGKFQ" target="_blank" rel="noopener noreferrer">Introduction to Git and GitHub</a>
+              </div>
+              <div class="cv-cert-meta">Google · Mar 2023 · ID: URVACUBKGKFQ</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/L4M49XGG256Y" target="_blank" rel="noopener noreferrer">Crash Course on Python</a>
+              </div>
+              <div class="cv-cert-meta">Google · Mar 2023 · ID: L4M49XGG256Y</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.coursera.org/verify/Ak2NBCHJTFW7" target="_blank" rel="noopener noreferrer">Using Python to Interact with the Operating System</a>
+              </div>
+              <div class="cv-cert-meta">Google · ID: Ak2NBCHJTFW7</div>
+            </div>
+
+            <div class="cv-cert-item">
+              <div class="cv-cert-name">
+                <a href="https://www.linkedin.com/in/annisyaf/details/certifications/" target="_blank" rel="noopener noreferrer">Data Science Job Guarantee Bootcamp — Batch 48</a>
+              </div>
+              <div class="cv-cert-meta">Rakamin Academy · Jan 2025 · ID: 484444812025</div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
