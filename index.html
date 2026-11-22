@@ -66,8 +66,8 @@
         --header-bg: rgba(8, 10, 11, 0.72);
         --header-bg-mobile: rgba(8, 10, 11, 0.88);
         --nav-bg: rgba(255, 255, 255, 0.04);
-        --nav-mobile-bg: rgba(8, 10, 11, 0.86);
-        --menu-backdrop: rgba(6, 8, 9, 0.72);
+        --nav-mobile-bg: rgba(10, 13, 15, 0.88);
+        --menu-backdrop: rgba(6, 8, 9, 0.36);
         --modal-backdrop: rgba(4, 6, 8, 0.76);
         --titlebar-bg: rgba(255, 255, 255, 0.03);
         --tab-bg: rgba(255, 255, 255, 0.045);
@@ -136,8 +136,8 @@
         --header-bg: rgba(255, 255, 255, 0.86);
         --header-bg-mobile: rgba(255, 255, 255, 0.94);
         --nav-bg: rgba(15, 23, 42, 0.045);
-        --nav-mobile-bg: rgba(248, 250, 252, 0.96);
-        --menu-backdrop: rgba(15, 23, 42, 0.34);
+        --nav-mobile-bg: rgba(255, 255, 255, 0.92);
+        --menu-backdrop: rgba(15, 23, 42, 0.16);
         --modal-backdrop: rgba(15, 23, 42, 0.48);
         --titlebar-bg: #f1f5f9;
         --tab-bg: #ffffff;
@@ -1283,12 +1283,12 @@
           inset: 0;
           z-index: 40;
           background: var(--menu-backdrop);
-          backdrop-filter: blur(18px) saturate(135%);
-          -webkit-backdrop-filter: blur(18px) saturate(135%);
+          backdrop-filter: blur(6px) saturate(115%);
+          -webkit-backdrop-filter: blur(6px) saturate(115%);
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
-          transition: opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.26s ease;
+          transition: opacity 0.32s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.32s ease;
         }
 
         body.menu-open .menu-backdrop {
@@ -1313,31 +1313,32 @@
           border: 1px solid var(--border);
           border-radius: 16px;
           background: var(--nav-mobile-bg);
-          backdrop-filter: blur(28px) saturate(150%);
-          -webkit-backdrop-filter: blur(28px) saturate(150%);
+          backdrop-filter: blur(28px) saturate(160%);
+          -webkit-backdrop-filter: blur(28px) saturate(160%);
           box-shadow: var(--panel-shadow);
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
-          transform: translateY(-10px) scale(0.97);
+          will-change: transform, opacity;
+          transform: translate3d(0, -28px, 0) scale(0.985);
           transform-origin: top center;
-          transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1),
-            transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-            visibility 0.24s ease;
+          transition: opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+            visibility 0.28s ease;
         }
 
         body.menu-open .nav {
           opacity: 1;
           visibility: visible;
           pointer-events: auto;
-          transform: translateY(0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
         }
 
         .nav-link,
         .nav .nav-link.appear {
           animation: none;
-          opacity: 1;
-          transform: none;
+          opacity: 0;
+          transform: translateY(-8px);
           width: 100%;
           height: 48px;
           padding: 0 16px;
@@ -1349,6 +1350,30 @@
           border: 1px solid transparent;
           background: transparent;
           color: var(--text-secondary);
+          transition: opacity 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+            background 0.2s ease,
+            border-color 0.2s ease,
+            color 0.2s ease,
+            box-shadow 0.2s ease;
+        }
+
+        body.menu-open .nav-link,
+        body.menu-open .nav .nav-link.appear {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        body.menu-open .nav-link:nth-child(1) {
+          transition-delay: 0.04s, 0.04s, 0s, 0s, 0s, 0s;
+        }
+
+        body.menu-open .nav-link:nth-child(2) {
+          transition-delay: 0.09s, 0.09s, 0s, 0s, 0s, 0s;
+        }
+
+        body.menu-open .nav-link:nth-child(3) {
+          transition-delay: 0.14s, 0.14s, 0s, 0s, 0s, 0s;
         }
 
         .nav-link::after {
